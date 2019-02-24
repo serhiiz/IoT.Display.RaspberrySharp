@@ -10,7 +10,7 @@
     <Copyright>Serhii Zabashta (c) 2019</Copyright>
 	<PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/serhiiz/IoT.Display.RaspberrySharp</RepositoryUrl>
-	<RepositoryType>Dependency</RepositoryType><RepositoryType>Dependency</RepositoryType><RepositoryType>Dependency</RepositoryType><RepositoryType>Dependency</RepositoryType><RepositoryType>Dependency</RepositoryType>
+	<RepositoryType>Dependency</RepositoryType>
     <PackageReleaseNotes>Support for SSD1306 connected to Raspberry Pi though I2C</PackageReleaseNotes>
     <PackageTags>Raspberry I2C SSD1306 layout OLED</PackageTags>
   </PropertyGroup>
