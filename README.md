@@ -9,8 +9,8 @@ open IoT.Display.Layout
 open IoT.Display.Devices.SSD1306
 
 [<EntryPoint>]
-let main argv =
-    use display = SSD1306Factory.createAtI2C1 SSD1306Factory.ssd1306Address3C
+let main _ =
+    use display = SSD1306Factory.createAtI2C1 SSD1306Factory.ssd1306Address3C :> ISSD1306
 
     [
         setChargePumpOn 
@@ -19,23 +19,23 @@ let main argv =
     ] 
     |> List.iter display.SendCommand
 
-	dock [] [
-		dock [Dock Dock.Top] [
-			text [Dock Dock.Left; thicknessSame 2] "TL"
-			text [Dock Dock.Right; thicknessSame 2] "TR"
-		]
-		dock [Dock Dock.Bottom] [
-			text [Dock Dock.Left; thicknessSame 2] "BL"
-			text [Dock Dock.Right; thicknessSame 2] "BR"
-		]
-		text [Dock Dock.Fill; HorizontalAlignment HorizontalAlignment.Center; VerticalAlignment VerticalAlignment.Center] "Welcome!"
-		
-	]
-	|> renderToDisplay display
-	
-	turnOn |> display.SendCommand
-	
-	0
+    dock [] [
+        dock [Dock Dock.Top] [
+            text [Dock Dock.Left; Margin (thicknessSame 2)] "TL"
+            text [Dock Dock.Right; Margin (thicknessSame 2)] "TR"
+        ]
+        dock [Dock Dock.Bottom] [
+            text [Dock Dock.Left; Margin (thicknessSame 2)] "BL"
+            text [Dock Dock.Right; Margin (thicknessSame 2)] "BR"
+        ]
+        text [Dock Dock.Fill; HorizontalAlignment HorizontalAlignment.Center; VerticalAlignment VerticalAlignment.Center] "Welcome!"
+        
+    ]
+    |> renderToDisplay display
+    
+    turnOn |> display.SendCommand
+    
+    0
 ```
 
 # License
