@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <Version>1.0.0-alpha1</Version>
+	<AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <FileVersion>1.0.0.1</FileVersion>
+    <Authors>Serhii Zabashta</Authors>
+    <Description>A platform specific adapter for IoT.Display (https://github.com/serhiiz/IoT.Display) which enables it to run on Raspberry Pi under .Net Framework/Mono. It's based on RaspberrySharp (https://github.com/JTrotta/RaspberrySharp).</Description>
+    <Copyright>Serhii Zabashta (c) 2019</Copyright>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/serhiiz/IoT.Display.RaspberrySharp</RepositoryUrl>
+	<RepositoryType>Dependency</RepositoryType><RepositoryType>Dependency</RepositoryType><RepositoryType>Dependency</RepositoryType><RepositoryType>Dependency</RepositoryType><RepositoryType>Dependency</RepositoryType>
+    <PackageReleaseNotes>Support for SSD1306 connected to Raspberry Pi though I2C</PackageReleaseNotes>
+    <PackageTags>Raspberry I2C SSD1306 layout OLED</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="I2cDisplayDevice.fs" />
+    <Compile Include="SSD1306Factory.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IoT.Display" Version="1.0.0-alpha2" />
+    <PackageReference Include="RaspberrySharp" Version="1.3.3-beta" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="FSharp.Core" Version="4.6.2" />
+  </ItemGroup>
+
+</Project>
