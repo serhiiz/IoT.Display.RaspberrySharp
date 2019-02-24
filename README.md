@@ -1,6 +1,8 @@
 # IoT.Display.UWP
 This is a platform specific adapter for [IoT.Display](https://github.com/serhiiz/IoT.Display) which enables it to run on Raspberry Pi under .Net Framework/Mono. It's based on [RaspberrySharp](https://github.com/JTrotta/RaspberrySharp).
 
+[![NuGet version (IoT.Display.RaspberrySharp)](https://img.shields.io/nuget/v/IoT.Display.RaspberrySharp.svg?style=flat-square)](https://www.nuget.org/packages/IoT.Display.RaspberrySharp/)
+
 # Code example
 ```F#
 open IoT.Display
