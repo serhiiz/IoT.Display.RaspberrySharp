@@ -12,7 +12,7 @@ open IoT.Display.Devices.SSD1306
 let main argv =
     use display = SSD1306Factory.createAtI2C1 SSD1306Factory.ssd1306Address3C
 
-	[
+    [
         setChargePumpOn 
         flipVertically 
         flipHorizontally 
