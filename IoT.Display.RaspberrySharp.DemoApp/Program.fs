@@ -3,6 +3,7 @@ open IoT.Display.RaspberrySharp
 open IoT.Display.Graphics
 open IoT.Display.Primitives
 open IoT.Display.Layout
+open IoT.Display.Devices
 open IoT.Display.Devices.SSD1306
 
 let init (display:ISSD1306) = 

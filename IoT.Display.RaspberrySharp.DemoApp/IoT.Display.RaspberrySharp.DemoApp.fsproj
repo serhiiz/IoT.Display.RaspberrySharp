@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="IoT.Display" Version="1.0.0-alpha2" />
+    <PackageReference Include="IoT.Display" Version="1.0.0-alpha4" />
   </ItemGroup>
 
   <ItemGroup>
