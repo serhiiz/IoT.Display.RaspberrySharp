@@ -8,6 +8,7 @@ This is a platform specific adapter for [IoT.Display](https://github.com/serhiiz
 open IoT.Display
 open IoT.Display.RaspberrySharp
 open IoT.Display.Layout
+open IoT.Display.Devices
 open IoT.Display.Devices.SSD1306
 
 [<EntryPoint>]
